@@ -18,6 +18,7 @@ public class FoodTrackerDatabase extends SQLiteOpenHelper {
     public static final String COLUMN_LUNCH = MealType.LUNCH.name();
     public static final String COLUMN_DINNER = MealType.DINNER.name();
     public static final String COLUMN_SNACKS = MealType.SNACKS.name();
+    public static final String COLUMN_DATE = "DATE";
 
 
 
@@ -28,9 +29,13 @@ public class FoodTrackerDatabase extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("create table " + TABLE_NAME + " ( " + COLUMN_ID + " " +
-                "INTEGER PRIMARY KEY AUTOINCREMENT," + COLUMN_BREAKFAST + " VARCHAR, " + COLUMN_LUNCH +
-                " VARCHAR, " + COLUMN_DINNER + " VARCHAR, " + COLUMN_SNACKS + " VARCHAR);");
+        db.execSQL("create table " + TABLE_NAME + " ( "
+                + COLUMN_ID + " " + "INTEGER PRIMARY KEY AUTOINCREMENT,"
+                + COLUMN_BREAKFAST + " VARCHAR, "
+                + COLUMN_LUNCH + " VARCHAR, "
+                + COLUMN_DINNER + " VARCHAR, "
+                + COLUMN_SNACKS + " VARCHAR, "
+                + COLUMN_DATE + " VARCHAR);");
 
 
 
@@ -38,6 +43,8 @@ public class FoodTrackerDatabase extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_NAME);
+        onCreate(db);
 
     }
 }

@@ -9,7 +9,9 @@ public class Food {
     private int id;
     private String date;
     private MealType meal;
-    //    private String day;
+
+
+    //private String day;
 //    private String time;
 
 
