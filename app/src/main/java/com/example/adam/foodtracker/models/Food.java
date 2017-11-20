@@ -7,21 +7,22 @@ package com.example.adam.foodtracker.models;
 public class Food {
 
     private int id;
-//    private String day;
-//    private String time;
-//    private String date;
+    private String date;
     private MealType meal;
+    //    private String day;
+//    private String time;
 
 
 
     public Food(MealType meal) {
         this.meal = meal;
         this.id = id;
+        this.date = date;
 
 
 //        this.day = day;
 //        this.time = time;
-//        this.date = date;
+
     }
 
     public MealType getMealType() {
