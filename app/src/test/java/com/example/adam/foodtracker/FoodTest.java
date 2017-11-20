@@ -33,4 +33,10 @@ public class FoodTest {
     public void testCanGetDate() {
         assertEquals("20/11/17", food.getDate());
     }
+
+
+    @Test
+    public void testCanGetId() {
+        assertEquals(1, food.getId());
+    }
 }
