@@ -7,8 +7,8 @@ package com.example.adam.foodtracker.models;
 public class Food {
 
     private int id;
-    private String date;
     private MealType meal;
+    private String date;
 
 
     //private String day;
@@ -16,9 +16,9 @@ public class Food {
 
 
 
-    public Food(MealType meal) {
-        this.meal = meal;
+    public Food(int id, MealType meal, String date) {
         this.id = id;
+        this.meal = meal;
         this.date = date;
 
 
@@ -32,5 +32,7 @@ public class Food {
     }
 
 
-
+    public String getDate() {
+        return date;
+    }
 }
