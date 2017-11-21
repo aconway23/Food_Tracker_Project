@@ -6,8 +6,18 @@ package com.example.adam.foodtracker.models;
 
 public enum MealType {
 
-    BREAKFAST,
-    LUNCH,
-    DINNER,
-    SNACKS
+    BREAKFAST ("Breakfast"),
+    LUNCH ("Lunch"),
+    DINNER ("Dinner"),
+    SNACKS ("Snacks");
+
+    private final String meal;
+
+    MealType(String meal) {
+        this.meal = meal;
+    }
+
+    public String getMeal() {
+        return this.meal;
+    }
 }

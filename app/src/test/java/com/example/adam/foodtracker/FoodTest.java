@@ -15,10 +15,12 @@ import static org.junit.Assert.assertEquals;
 public class FoodTest {
 
     Food food;
+    MealType mealType;
 
     @Before
     public void before() {
-        food = new Food(1, MealType.BREAKFAST, "20/11/17");
+        food = new Food(1, MealType.BREAKFAST, "Porridge", "20/11/17");
+        mealType = MealType.BREAKFAST;
     }
 
 
@@ -26,6 +28,11 @@ public class FoodTest {
     public void testReturnFoodType() {
 //        food = new Food(MealType.BREAKFAST);
         assertEquals(MealType.BREAKFAST, food.getMealType());
+    }
+
+    @Test
+    public void testReturnFoodFromEnum() {
+        assertEquals("Breakfast", mealType.getMeal());
     }
 
 
@@ -39,4 +46,6 @@ public class FoodTest {
     public void testCanGetId() {
         assertEquals(1, food.getId());
     }
+
+
 }

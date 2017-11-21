@@ -6,25 +6,24 @@ package com.example.adam.foodtracker.models;
 
 public class Food {
 
+
     private int id;
     private MealType meal;
     private String date;
+    private String consumed;
 
 
-    //private String day;
-//    private String time;
-
-
-
-    public Food(int id, MealType meal, String date) {
+    public Food(int id, MealType meal, String date, String consumed) {
         this.id = id;
         this.meal = meal;
         this.date = date;
+        this.consumed = consumed;
+    }
 
 
-//        this.day = day;
-//        this.time = time;
 
+    public int getId() {
+        return id;
     }
 
     public MealType getMealType() {
@@ -37,7 +36,26 @@ public class Food {
     }
 
 
-    public int getId() {
-        return id;
+    public String getConsumed() {
+        return this.consumed;
+    }
+
+
+
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setMealType(MealType meal) {
+        this.meal = meal;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public void setConsumed(String consumed) {
+        this.consumed = consumed;
     }
 }
