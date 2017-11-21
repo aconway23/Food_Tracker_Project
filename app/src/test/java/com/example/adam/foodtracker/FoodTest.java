@@ -19,7 +19,7 @@ public class FoodTest {
 
     @Before
     public void before() {
-        food = new Food(1, MealType.BREAKFAST, "Porridge", "20/11/17");
+        food = new Food(1, MealType.BREAKFAST, "20/11/17", "Porridge" );
         mealType = MealType.BREAKFAST;
     }
 
@@ -47,5 +47,8 @@ public class FoodTest {
         assertEquals(1, food.getId());
     }
 
-
+    @Test
+    public void testCanGetFoodConsumed() {
+        assertEquals("Porridge", food.getConsumed());
+    }
 }
