@@ -71,6 +71,18 @@ public class FoodTrackerDatabase extends SQLiteOpenHelper {
         db.close();
     }
 
+    public void updateDataInTable(String id, MealType meal, String consumed, String date) {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues contentValues = new ContentValues();
+        contentValues.put(COLUMN_MEAL_TYPE, meal.getMeal());
+        contentValues.put(COLUMN_CONSUMED, consumed);
+        contentValues.put(COLUMN_DATE, date);
+        db.update(TABLE_NAME, contentValues, COLUMN_ID + " = ?", new String[] {id});
+        db.close();
+    }
+
+
+
 
 }
 
