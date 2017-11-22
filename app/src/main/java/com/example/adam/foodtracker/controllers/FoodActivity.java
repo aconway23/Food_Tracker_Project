@@ -25,13 +25,9 @@ public class FoodActivity extends AppCompatActivity {
 
         myDb = new FoodTrackerDatabase(this);
 
-
-
-
-
-        Intent intent = getIntent();
-        Bundle extras = intent.getExtras();
-        String foodResult = extras.getString("result");
+//        Intent intent = getIntent();
+//        Bundle extras = intent.getExtras();
+//        String foodResult = extras.getString("result");
 
     }
     @Override

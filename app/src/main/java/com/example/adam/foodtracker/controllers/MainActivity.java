@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,14 +28,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void onMealButtonClick(View view) {
         Intent intent = new Intent(this, FoodActivity.class);
-        Food food = new Food(1, MealType.BREAKFAST, "13/12/2017", "consumed" );
-
-        myDb.insertDataIntoTable(food.getMealType(), food.getConsumed(), food.getDate());
-
-        String foodResult = food.getConsumed();
-        intent.putExtra("result", foodResult);
         startActivity(intent);
 
+//        Food food = new Food(1, MealType.BREAKFAST, "13/12/2017", "consumed" );
+//        myDb.insertDataIntoTable(food.getMealType(), food.getConsumed(), food.getDate());
+//        String foodResult = food.getConsumed();
+//        intent.putExtra("result", foodResult);
     }
 
 }
