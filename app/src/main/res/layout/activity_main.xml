@@ -29,12 +29,19 @@
 
     <ImageButton
         android:id="@+id/mealButton"
-        android:layout_width="200dp"
-        android:layout_height="201dp"
-        android:background="@android:color/darker_gray"
-        android:scaleType="centerCrop"
-        android:src="@drawable/foodknife_fork_640"
-        tools:layout_editor_absoluteX="92dp"
-        tools:layout_editor_absoluteY="155dp" />
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="onMealButtonClick"
+        android:src="@drawable/food_cultery"
+        android:text="Consume!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AddMealText"
+        app:layout_constraintVertical_bias="0.154" />
 
 </android.support.constraint.ConstraintLayout>

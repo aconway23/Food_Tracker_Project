@@ -1,4 +1,4 @@
-package com.example.adam.foodtracker.models;
+package com.example.adam.foodtracker.Database;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -6,6 +6,9 @@ import android.content.pm.LauncherApps;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+
+import com.example.adam.foodtracker.models.Food;
+import com.example.adam.foodtracker.models.MealType;
 
 import org.w3c.dom.Text;
 
@@ -57,7 +60,7 @@ public class FoodTrackerDatabase extends SQLiteOpenHelper {
 
 
 
-    public void insertDataIntoTable(MealType meal, String consumed,  String date ) {
+    public void insertDataIntoTable(MealType meal, String consumed, String date ) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(COLUMN_MEAL_TYPE, meal.getMeal());
