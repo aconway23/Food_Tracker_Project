@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/random"
     tools:context="com.example.adam.foodtracker.controllers.EditFoodActivity">
 
     <TextView
@@ -17,6 +18,7 @@
         android:fontFamily="serif"
         android:text="Select Meal Type"
         android:textAlignment="center"
+        android:textColor="@android:color/black"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -35,6 +37,7 @@
         android:fontFamily="serif"
         android:text="Enter Meal"
         android:textAlignment="center"
+        android:textColor="@android:color/black"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -54,6 +57,7 @@
         android:fontFamily="serif"
         android:text="Select Date"
         android:textAlignment="center"
+        android:textColor="@android:color/black"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/editDateTwo"
@@ -65,7 +69,7 @@
 
     <Spinner
         android:id="@+id/mealSpinner2"
-        android:layout_width="102dp"
+        android:layout_width="96dp"
         android:layout_height="47dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -74,40 +78,48 @@
         android:popupBackground="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/editFoodTwo"
-        app:layout_constraintHorizontal_bias="0.307"
+        app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mealTypeTextTwo"
-        app:layout_constraintVertical_bias="0.04" />
+        app:layout_constraintVertical_bias="0.06" />
 
     <EditText
         android:id="@+id/editFoodTwo"
-        android:layout_width="97dp"
+        android:layout_width="127dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
-        android:layout_marginEnd="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="24dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/editDateTwo"
+        app:layout_constraintEnd_toStartOf="@+id/selectDateTextTwo"
+        app:layout_constraintStart_toEndOf="@+id/mealTypeTextTwo"
         app:layout_constraintTop_toBottomOf="@+id/enterMealTextTwo"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/editDateTwo"
-        android:layout_width="91dp"
-        android:layout_height="wrap_content"
+        android:layout_width="75dp"
+        android:layout_height="41dp"
         android:layout_marginBottom="384dp"
         android:layout_marginEnd="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="@+id/deleteMealButton"
+        app:layout_constraintTop_toBottomOf="@+id/enterMealTextTwo"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/saveMealButtonTwo"
-        android:layout_width="149dp"
-        android:layout_height="54dp"
+        android:layout_width="143dp"
+        android:layout_height="57dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -122,12 +134,12 @@
         app:layout_constraintHorizontal_bias="0.083"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editFoodTwo"
-        app:layout_constraintVertical_bias="0.164" />
+        app:layout_constraintVertical_bias="0.366" />
 
     <Button
         android:id="@+id/deleteMealButton"
         android:layout_width="146dp"
-        android:layout_height="52dp"
+        android:layout_height="55dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -141,8 +153,8 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.911"
+        app:layout_constraintHorizontal_bias="0.88"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editDateTwo"
-        app:layout_constraintVertical_bias="0.152" />
+        app:layout_constraintVertical_bias="0.365" />
 </android.support.constraint.ConstraintLayout>

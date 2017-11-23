@@ -4,11 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/random"
     tools:context="com.example.adam.foodtracker.controllers.AddFoodActivity">
 
     <EditText
         android:id="@+id/editFood"
-        android:layout_width="97dp"
+        android:layout_width="103dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -25,7 +26,7 @@
 
     <Spinner
         android:id="@+id/mealSpinner"
-        android:layout_width="102dp"
+        android:layout_width="98dp"
         android:layout_height="47dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -42,7 +43,7 @@
 
     <EditText
         android:id="@+id/editDate"
-        android:layout_width="91dp"
+        android:layout_width="106dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -82,6 +83,7 @@
         android:fontFamily="serif"
         android:text="Select Meal Type"
         android:textAlignment="center"
+        android:textColor="@android:color/black"
         android:textSize="14sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/mealSpinner2"
@@ -102,6 +104,7 @@
         android:fontFamily="serif"
         android:text="Enter Meal"
         android:textAlignment="center"
+        android:textColor="@android:color/black"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/editFood"
@@ -122,6 +125,7 @@
         android:fontFamily="serif"
         android:text="Select Date"
         android:textAlignment="center"
+        android:textColor="@android:color/black"
         android:textSize="15sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/editDate"
@@ -133,7 +137,7 @@
 
     <Button
         android:id="@+id/saveMealButton"
-        android:layout_width="140dp"
+        android:layout_width="146dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="260dp"
         android:layout_marginEnd="8dp"
