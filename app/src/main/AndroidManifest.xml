@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".controllers.FoodActivity" />
         <activity android:name=".controllers.MealListActivity" />
-        <activity android:name=".controllers.AddFoodActivity"></activity>
+        <activity android:name=".controllers.AddFoodActivity" />
+        <activity android:name=".controllers.EditFoodActivity"></activity>
     </application>
 
 </manifest>
