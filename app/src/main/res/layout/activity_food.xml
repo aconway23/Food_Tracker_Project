@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:onClick="onFoodTypeRowClick"
     tools:context="com.example.adam.foodtracker.controllers.FoodActivity">
 
     <TextView
@@ -15,6 +16,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:fontFamily="serif"
+        android:text="breakfast"
         android:textAlignment="center"
         android:textColor="@android:color/darker_gray"
         android:textSize="24sp"
@@ -24,8 +26,7 @@
         app:layout_constraintHorizontal_bias="0.037"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.017"
-        tools:text="breakfast" />
+        app:layout_constraintVertical_bias="0.017" />
 
     <TextView
         android:id="@+id/consumedText"
@@ -34,14 +35,14 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:fontFamily="serif"
+        android:text="consumed"
         android:textAlignment="center"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.084"
         app:layout_constraintStart_toEndOf="@+id/breakfastText"
-        app:layout_constraintTop_toTopOf="@+id/breakfastText"
-        tools:text="consumed" />
+        app:layout_constraintTop_toTopOf="@+id/breakfastText" />
 
     <TextView
         android:id="@+id/dateText"
@@ -50,12 +51,12 @@
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:text="date"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.324"
         app:layout_constraintStart_toEndOf="@+id/consumedText"
         app:layout_constraintTop_toTopOf="@+id/consumedText"
-        app:layout_constraintVertical_bias="0.021"
-        tools:text="date" />
+        app:layout_constraintVertical_bias="0.021" />
 
 </android.support.constraint.ConstraintLayout>

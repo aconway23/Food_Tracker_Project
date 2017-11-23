@@ -80,7 +80,7 @@ public class FoodTrackerDatabase extends SQLiteOpenHelper {
         db.close();
     }
 
-    public void deleteDataFromTable(String id, MealType meal, String consumed, String date) {
+    public void deleteDataFromTable(String id) {
         SQLiteDatabase db = this.getWritableDatabase();
         db.delete(TABLE_NAME,COLUMN_ID + " = ?", new String[] {id});
         db.close();

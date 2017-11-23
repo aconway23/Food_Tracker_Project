@@ -1,10 +1,12 @@
 package com.example.adam.foodtracker.models;
 
+import java.io.Serializable;
+
 /**
  * Created by adam on 20/11/2017.
  */
 
-public class Food {
+public class Food implements Serializable{
 
 
     private int id;

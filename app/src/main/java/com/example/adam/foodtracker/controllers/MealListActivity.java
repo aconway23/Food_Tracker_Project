@@ -1,5 +1,6 @@
 package com.example.adam.foodtracker.controllers;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -12,4 +13,6 @@ public class MealListActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_meal_list);
     }
+
+
 }

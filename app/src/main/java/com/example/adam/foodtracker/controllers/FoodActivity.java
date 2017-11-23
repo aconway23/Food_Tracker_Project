@@ -47,4 +47,14 @@ public class FoodActivity extends AppCompatActivity {
         Intent intent = new Intent(this, AddFoodActivity.class);
         startActivity(intent);
     }
+
+
+    public void onFoodTypeRowClick(View listitemView) {
+
+        Food food = (Food) listitemView.getTag();
+        Intent intent = new Intent(this, EditFoodActivity.class);
+        intent.putExtra("Food", food);
+        startActivity(intent);
+    }
+
 }

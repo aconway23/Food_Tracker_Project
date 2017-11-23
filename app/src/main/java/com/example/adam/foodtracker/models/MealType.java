@@ -32,7 +32,7 @@ public enum MealType {
             case "Dinner":
                 return DINNER;
 
-            case "Snack":
+            case "Snacks":
                 return SNACKS;
 
             default:
